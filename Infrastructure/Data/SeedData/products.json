@@ -1,0 +1,182 @@
+[
+  {
+    "Name": "Saber Altria Pendragon (Alter)",
+    "Description": "The King of Knights Alternate Version in her iconic black armor.",
+    "Price": 220,
+    "PictureUrl": "assets/images/saberalter.webp",
+    "Type": "Figures",
+    "Brand": "Fate Series",
+    "QuantityInStock": 15
+  },
+  {
+    "Name": "Rin Tohsaka (Casual Ver)",
+    "Description": "Following on from the popular Saber, comes a figma of the Average One, Tohsaka Rin from Fate/Stay Night!",
+    "Price": 180,
+    "PictureUrl": "assets/images/rin.webp",
+    "Type": "Figures",
+    "Brand": "Fate Series",
+    "QuantityInStock": 10
+  },
+  {
+    "Name": "Gilgamesh - Caster",
+    "Description": "From the popular smartphone game Fate/Grand Order comes a 1/8th scale figure of the Caster class of Gilgamesh based on his third ascension illustration from the game.",
+    "Price": 350,
+    "PictureUrl": "assets/images/gilgamesh.webp",
+    "Type": "Figures",
+    "Brand": "Fate Series",
+    "QuantityInStock": 3
+  },
+  {
+    "Name": "Jeanne d'Arc (Ruler)",
+    "Description": "From the novel Fate/Apocrypha comes a scale figure of the Ruler servant, Jeanne d'Arc! Jeanne d'Arc was summoned for the purpose of presiding over the Holy Grail War, and has now been sculpted in 1/8th scale for fans to enjoy by their side.",
+    "Price": 260,
+    "PictureUrl": "assets/images/jeanne.webp",
+    "Type": "Figures",
+    "Brand": "Fate Series",
+    "QuantityInStock": 8
+  },
+  {
+    "Name": "Special Week",
+    "Description": "The energetic Special Week in her G1 Race uniform. 1/7 Scale. Ready to run for the Twinkle Series!",
+    "Price": 140,
+    "PictureUrl": "assets/images/specialweek.webp",
+    "Type": "Figures",
+    "Brand": "Uma Musume",
+    "QuantityInStock": 25
+  },
+  {
+    "Name": "Silence Suzuka",
+    "Description": "Capturing the incredible speed of Silence Suzuka. Dynamic pose with wind effects. 1/7 Scale.",
+    "Price": 155,
+    "PictureUrl": "assets/images/silencesuzuka.webp",
+    "Type": "Figures",
+    "Brand": "Uma Musume",
+    "QuantityInStock": 12
+  },
+  {
+    "Name": "Gold Ship Nendoroid",
+    "Description": "The unpredictable Gold Ship in multiple nendoroid fun pose.",
+    "Price": 130,
+    "PictureUrl": "assets/images/golshi.webp",
+    "Type": "Figures",
+    "Brand": "Uma Musume",
+    "QuantityInStock": 50
+  },
+  {
+    "Name": "Tokai Teio",
+    "Description": "The 'Miracle' Tokai Teio. Features a high-gloss finish on the uniform and a confident smile. 1/4 Scale.",
+    "Price": 500,
+    "PictureUrl": "assets/images/tokaiteio.webp",
+    "Type": "Figures",
+    "Brand": "Uma Musume",
+    "QuantityInStock": 18
+  },
+  {
+    "Name": "Kyouka Uzen (7th Unit Chief)",
+    "Description": "The Chief of the 7th Unit of the Demon Defense Force.",
+    "Price": 210,
+    "PictureUrl": "assets/images/kyouka.webp",
+    "Type": "Figures",
+    "Brand": "Mato Seihei",
+    "QuantityInStock": 7
+  },
+  {
+    "Name": "Tenka Izumo (6th Unit Chief)",
+    "Description": "The powerful Chief of the 6th Unit of the Demon Defense Force.",
+    "Price": 210,
+    "PictureUrl": "assets/images/tenka.webp",
+    "Type": "Figures",
+    "Brand": "Mato Seihei",
+    "QuantityInStock": 5
+  },
+  {
+    "Name": "Nazuna Nanakusa Nendoroid",
+    "Description": "The mysterious vampire Nazuna Nanakusa in cute poses.",
+    "Price": 175,
+    "PictureUrl": "assets/images/nazuna.webp",
+    "Type": "Figures",
+    "Brand": "Call of The Night",
+    "QuantityInStock": 20
+  },
+  {
+    "Name": "Rei Ayanami",
+    "Description": "The iconic First Child in her white plugsuit.",
+    "Price": 165,
+    "PictureUrl": "assets/images/rei.webp",
+    "Type": "Figures",
+    "Brand": "Evangelion",
+    "QuantityInStock": 30
+  },
+  {
+    "Name": "Asuka Langley (Plugsuit Ver.)",
+    "Description": "The Second Child in her vibrant red plugsuit. Features the spear of longinus.",
+    "Price": 170,
+    "PictureUrl": "assets/images/asuka.webp",
+    "Type": "Figures",
+    "Brand": "Evangelion",
+    "QuantityInStock": 28
+  },
+  {
+    "Name": "EVA Unit-01 (Dynaction)",
+    "Description": "Highly detailed mechanic model of Unit-01. Features articulate joints and Progressive Knife accessory.",
+    "Price": 250,
+    "PictureUrl": "assets/images/eva.webp",
+    "Type": "Figures",
+    "Brand": "Evangelion",
+    "QuantityInStock": 6
+  },
+  {
+    "Name": "Rice Shower (Blue Rose)",
+    "Description": "The Black Assassin. A beautiful, slightly melancholic figure holding a blue rose. 22 cm tall.",
+    "Price": 155,
+    "PictureUrl": "assets/images/rice.webp",
+    "Type": "Figures",
+    "Brand": "Uma Musume",
+    "QuantityInStock": 9
+  },
+  {
+    "Name": "Mash Kyrielight (Shielder)",
+    "Description": "The reliable Kouhai. 1/7 scale figure holding her massive shield.",
+    "Price": 195,
+    "PictureUrl": "assets/images/mash.webp",
+    "Type": "Figures",
+    "Brand": "Fate Series",
+    "QuantityInStock": 22
+  },
+  {
+    "Name": "Uma Musume: Cinderella Gray Volume 2",
+    "Description": "Features the character Belno Light as the volume cover",
+    "Price": 100,
+    "PictureUrl": "assets/images/cingray2.webp",
+    "Type": "Manga",
+    "Brand": "Uma Musume",
+    "QuantityInStock": 13
+  },
+  {
+    "Name": "Uma Musume: Cinderella Gray Volume 17",
+    "Description": "Features the character Oguri Cap as the volume cover",
+    "Price": 100,
+    "PictureUrl": "assets/images/cingray17.jpg",
+    "Type": "Manga",
+    "Brand": "Uma Musume",
+    "QuantityInStock": 12
+  },
+  {
+    "Name": "Mikadono Sanshimai wa Angai, Choroi Volume 6",
+    "Description": "Features the three sisters with Sakura Yaotome",
+    "Price": 100,
+    "PictureUrl": "assets/images/mikadono6.webp",
+    "Type": "Manga",
+    "Brand": "Mikadono Sanshimai wa Angai, Choroi",
+    "QuantityInStock": 4
+  },
+  {
+    "Name": "Mikadono Sanshimai wa Angai, Choroi Volume 7",
+    "Description": "Featueres the three sisters in maid outfit",
+    "Price": 100,
+    "PictureUrl": "assets/images/mikadono7.webp",
+    "Type": "Manga",
+    "Brand": "Mikadono Sanshimai wa Angai, Choroi",
+    "QuantityInStock": 6
+  }
+]
