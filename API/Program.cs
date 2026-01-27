@@ -1,4 +1,5 @@
 using System.Net.Mime;
+using API.Middleware;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 // * Scoped to the lifetime of the HTTP req -> Just Right
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddCors();
 
 // * Above app is service
 
@@ -26,6 +28,9 @@ var app = builder.Build();
 // * Below app is a Middleware
 
 // Configure the HTTP request pipeline.
+app.UseMiddleware<ExceptionMiddleware>();
+
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
 app.MapControllers();
 
