@@ -1,6 +1,7 @@
 using System.Net.Mime;
 using Core.Interfaces;
 using Infrastructure.Data;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 // * AddSingleton will not dispose of the service until the app is shut down -> Too Long
 // * Scoped to the lifetime of the HTTP req -> Just Right
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 // * Above app is service
 
