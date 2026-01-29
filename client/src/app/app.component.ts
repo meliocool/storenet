@@ -11,7 +11,7 @@ import { ShopComponent } from './features/shop/shop.component';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [HeaderComponent, ShopComponent],
+  imports: [RouterOutlet, HeaderComponent],
 })
 export class AppComponent {
   title = 'StoreNet';

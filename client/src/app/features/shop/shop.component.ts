@@ -25,7 +25,6 @@ import { FormsModule } from '@angular/forms';
     MatMenuTrigger,
     MatPaginator,
     FormsModule,
-    MatIconButton,
   ],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.css',
