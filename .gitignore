@@ -486,4 +486,3 @@ API/appsettings.json
 client/ssl/localhost-key.pem
 client/ssl/localhost.pem
 API/appsettings.Development.json
-API/appsettings.Development.json
