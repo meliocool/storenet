@@ -32,6 +32,10 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
 builder.Services.AddSingleton<ICartService, CartService>();
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<AppUser>().AddEntityFrameworkStores<StoreContext>();
+builder.Services.ConfigureApplicationCookie(options => {
+    options.Cookie.SameSite = SameSiteMode.None;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+});
 
 // * Above app is service
 
