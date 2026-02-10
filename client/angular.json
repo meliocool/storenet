@@ -26,6 +26,10 @@
         "@schematics/angular:guard": {
           "typeSeparator": ".",
           "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "typeSeparator": ".",
+          "skipTests": true
         }
       },
       "root": "",
