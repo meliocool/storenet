@@ -1,1 +1,154 @@
-<p>home works!</p>
+<section class="py-20 md:py-32">
+  <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-5xl md:text-7xl font-bold text-slate-800 mb-6 uppercase">
+          Store<span class="text-blue-500">Net</span>
+        </h1>
+        <p class="text-2xl md:text-3xl text-gray-700 mb-8 font-light">
+          Bring your favorite characters home
+        </p>
+        <p class="text-lg text-gray-600 mb-10 max-w-xl">
+          Discover premium anime figures from the most beloved series. Authentic, detailed, and
+          crafted for true collectors.
+        </p>
+        <a
+          routerLink="/shop"
+          class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+        >
+          Go To Shop
+        </a>
+      </div>
+
+      <div class="flex-1 w-full max-w-md">
+        <div class="relative" (mouseenter)="stopCarousel()" (mouseleave)="startCarousel()">
+          <div class="absolute inset-0 bg-blue-200 rounded-3xl blur-3xl opacity-30"></div>
+          <div class="relative bg-white rounded-3xl p-8 shadow-2xl overflow-hidden">
+            <div class="relative aspect-square rounded-2xl overflow-hidden">
+              @for (image of carouselImages; track image; let i = $index) {
+                <div
+                  class="absolute inset-0 transition-opacity duration-500 ease-in-out"
+                  [class.opacity-100]="currentSlide === i"
+                  [class.opacity-0]="currentSlide !== i"
+                >
+                  <img
+                    [src]="image"
+                    [alt]="'Anime Figure ' + (i + 1)"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              }
+
+              <button
+                (click)="prevSlide()"
+                class="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-600 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110"
+                aria-label="Previous slide"
+              >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                (click)="nextSlide()"
+                class="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-600 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110"
+                aria-label="Next slide"
+              >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="flex justify-center gap-2 mt-4">
+              @for (image of carouselImages; track image; let i = $index) {
+                <button
+                  (click)="goToSlide(i)"
+                  class="w-2 h-2 rounded-full transition-all duration-300"
+                  [class.bg-blue-600]="currentSlide === i"
+                  [class.w-8]="currentSlide === i"
+                  [class.bg-blue-300]="currentSlide !== i"
+                  [attr.aria-label]="'Go to slide ' + (i + 1)"
+                ></button>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+      Why Choose StoreNet?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      @for (feature of features; track feature.title) {
+        <div class="text-center group">
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-2xl mb-6 text-4xl group-hover:bg-blue-100 transition-colors duration-300"
+          >
+            {{ feature.icon }}
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            {{ feature.title }}
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            {{ feature.description }}
+          </p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="container mx-auto px-6 md:px-12 max-w-4xl text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      Ready to Start Your Collection?
+    </h2>
+    <p class="text-lg text-gray-600 mb-10">
+      Browse hundreds of authentic anime figures from your favorite series
+    </p>
+    <a
+      routerLink="/shop"
+      class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Explore Collection
+    </a>
+  </div>
+</section>
+
+<footer class="text-white py-12 w-full">
+  <div class="px-6 md:px-12">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-6xl mx-auto">
+      <div class="text-center md:text-left">
+        <p class="text-gray-400">© {{ currentYear }} StoreNet. All rights reserved.</p>
+      </div>
+
+      <div class="flex gap-8">
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          Terms
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          Privacy
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          Contact
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
